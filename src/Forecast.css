@@ -1,0 +1,19 @@
+div.forecast {
+  margin-top: 20px;
+  padding: 10px 10px;
+  border: solid;
+  border-width: 1px 1px;
+  border-color: #dfdfdf;
+  border-radius: 15px;
+  background: #f1f3f8;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
+}
+
+div.col-2 {
+  text-align: center;
+}
+
+.img-thumbnail {
+  border: none;
+  background: #f1f3f8;
+}

@@ -1,0 +1,46 @@
+.card {
+  border-radius: 15px;
+  background: #f1f3f8;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-subtitle {
+  font-size: 24px;
+}
+
+.current-condition {
+  font-size: 20px;
+  font-style: italic;
+  color: #6c758d;
+  text-transform: capitalize;
+}
+
+.icon {
+  width: 250px;
+}
+
+h3.card-subtitle {
+  font-size: 30px;
+}
+
+.units {
+  font-size: 28px;
+}
+
+.units .active {
+  color: #6c758d;
+  cursor: default;
+}
+
+.units .active:hover {
+  text-decoration: none;
+}
+
+.units a {
+  text-decoration: none;
+  color: #31a8e0;
+}
