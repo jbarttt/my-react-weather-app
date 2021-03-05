@@ -25,13 +25,13 @@ export default function Weather() {
             28
           </span>
           <span className="units">
-            <a href="#" id="fahrenheit-link" className="active">
+            <span id="fahrenheit-link" className="active">
               °F
-            </a>{" "}
+            </span>{" "}
             |
-            <a href="#" id="celsius-link">
+            <span id="celsius-link">
               °C
-            </a>
+            </span>
           </span>
         </h3>
         <p className="card-text">
