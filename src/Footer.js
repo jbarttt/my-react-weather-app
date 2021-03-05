@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <div className="footer">
       <strong>
-        <a href="https://github.com/jbarttt/my-weather-app" target="_blank">
+        <a href="https://github.com/jbarttt/my-weather-app" target="_blank" rel="noreferrer">
           Open-Source-Code
         </a>{" "}
         by Julia Bartoletti
