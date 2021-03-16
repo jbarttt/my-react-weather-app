@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
     <Header />
-    <Weather />
+    <Weather defaultCity="New York" />
     <Forecast />
     <Footer />
     </div>
