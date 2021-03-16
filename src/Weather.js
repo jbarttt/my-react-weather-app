@@ -1,28 +1,66 @@
-import React from "react";
+import axios from "axios";
+import React, { useState } from "react";
 import "./Weather.css";
 
 export default function Weather() {
-  return (
+  const [weatherData, setWeatherData] = useState({ ready: false});
+
+  function handleResponse(response) {
+    setWeatherData({
+      ready: true,
+      dateTime: "Wednesday 19:38",
+      temperature: response.data.main.temp,
+      wind: response.data.wind.speed,
+      city: response.data.name,
+      description: response.data.weather[0].description,
+      icon: "Images/01d.png",
+      humidity: response.data.main.humidity
+    });
+  }
+
+  if (weatherData.ready) {
+    return (
+    <div>
+    <form id="search-form">
+      <div className="input-group mb-3">
+        <input
+          type="text"
+          className="form-control"
+          id="city-search"
+          placeholder="Enter City Name"
+        />
+        <button
+          className="btn btn-outline-secondary"
+          type="submit"
+          id="city-submit-button"
+        >
+          <i className="fas fa-search"></i>
+        </button>
+        <button className="btn btn-outline-secondary" id="current-location">
+          <i className="fas fa-map-marker-alt"></i>
+        </button>
+      </div>
+    </form>
     <div className="card" id="current-weather">
       <div className="card-body">
         <h1 className="card-title" id="current-city">
-          New York City
+          {weatherData.city}
         </h1>
         <h2 className="card-subtitle mb-2 text-muted">
-          <span id="current-date-time">Saturday 13:54</span>
+          <span id="current-date-time">{weatherData.dateTime}</span>
         </h2>
         <h2 className="current-condition" id="weather-condition">
-          Clear
+          {weatherData.description}
         </h2>
         <img
           className="icon"
-          src="Images/01d.png"
-          alt="weather-icon"
+          src={weatherData.icon}
+          alt={weatherData.description}
           id="weather-icon"
         />
         <h3 className="card-subtitle mb-2 text-muted">
           <span className="temperature" id="current-temp">
-            28
+            {Math.round(weatherData.temperature)}
           </span>
           <span className="units">
             <span id="fahrenheit-link" className="active">
@@ -37,17 +75,27 @@ export default function Weather() {
         <p className="card-text">
           Humidity:{" "}
           <span className="humidity" id="current-humidity">
-            55
+            {weatherData.humidity}
           </span>
           %
           <br />
           Wind:{" "}
           <span className="wind" id="wind-speed">
-            7
+            {Math.round(weatherData.wind)}
           </span>{" "}
           mph
         </p>
       </div>
     </div>
+    </div>
   );
+  } else {
+    const apiKey = "4964201fe38c8af7f212aad270301c64"
+  let city = "New York"
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`
+
+  axios.get(apiUrl).then(handleResponse);
+
+  return "Loading...";
+  }
 }
