@@ -19,6 +19,16 @@ export default function Weather(props) {
       icon: `Images/${response.data.weather[0].icon}.png`,
       humidity: response.data.main.humidity
     });
+
+    if (response.data.weather[0].icon === "01d") {
+      document.body.style = 'background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);'
+    } else if (response.data.weather[0].icon === "01n") {
+      document.body.style = 'background: linear-gradient(to right, #d7d2cc 0%, #304352 100%);'
+    } else if (response.data.weather[0] === "02d") {
+      document.body.style = 'background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);'
+    } else if (response.data.weather[0] === "02n") {
+      document.body.style = 'background: linear-gradient(to right, #d7d2cc 0%, #304352 100%);'
+    }
   }
 
   function search() {
