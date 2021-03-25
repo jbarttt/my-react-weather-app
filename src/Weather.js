@@ -24,37 +24,37 @@ export default function Weather(props) {
       document.body.style = 'background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);'
     } else if (response.data.weather[0].icon === "01n") {
       document.body.style = 'background: linear-gradient(to right, #d7d2cc 0%, #304352 100%);'
-    } else if (response.data.weather[0] === "02d") {
+    } else if (response.data.weather[0].icon === "02d") {
       document.body.style = 'background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);'
-    } else if (response.data.weather[0] === "02n") {
+    } else if (response.data.weather[0].icon === "02n") {
       document.body.style = 'background: linear-gradient(to right, #d7d2cc 0%, #304352 100%);'
-    } else if (response.data.weather[0] === "03d") {
+    } else if (response.data.weather[0].icon === "03d") {
       document.body.style = 'background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);'
-    } else if (response.data.weather[0] === "03n") {
+    } else if (response.data.weather[0].icon === "03n") {
       document.body.style = 'background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);'
-    } else if (response.data.weather[0] === "04d") {
+    } else if (response.data.weather[0].icon === "04d") {
       document.body.style = 'background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);'
-    } else if (response.data.weather[0] === "04n") {
+    } else if (response.data.weather[0].icon === "04n") {
       document.body.style = 'background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);'
-    } else if (response.data.weather[0] === "09d") {
+    } else if (response.data.weather[0].icon === "09d") {
       document.body.style = 'background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);'
-    } else if (response.data.weather[0] === "09n") {
+    } else if (response.data.weather[0].icon === "09n") {
       document.body.style = 'background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);'
-    } else if (response.data.weather[0] === "10d") {
+    } else if (response.data.weather[0].icon === "10d") {
       document.body.style = 'background: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);'
-    } else if (response.data.weather[0] === "10n") {
+    } else if (response.data.weather[0].icon === "10n") {
       document.body.style = 'background: linear-gradient(to right, #d7d2cc 0%, #304352 100%);'
-    } else if (response.data.weather[0] === "11d") {
+    } else if (response.data.weather[0].icon === "11d") {
       document.body.style = 'background: linear-gradient(-180deg, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);'
-    } else if (response.data.weather[0] === "11n") {
+    } else if (response.data.weather[0].icon === "11n") {
       document.body.style = 'background: linear-gradient(-180deg, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);'
-    } else if (response.data.weather[0] === "13d") {
+    } else if (response.data.weather[0].icon === "13d") {
       document.body.style = 'background: linear-gradient(to top, #dfe9f3 0%, white 100%);'
-    } else if (response.data.weather[0] === "13n") {
+    } else if (response.data.weather[0].icon === "13n") {
       document.body.style = 'background: linear-gradient(to top, #dfe9f3 0%, white 100%);'
-    } else if (response.data.weather[0] === "50d") {
+    } else if (response.data.weather[0].icon === "50d") {
       document.body.style = 'background: linear-gradient(-180deg, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);'
-    } else if (response.data.weather[0] === "50n") {
+    } else if (response.data.weather[0].icon === "50n") {
       document.body.style = 'background: linear-gradient(-180deg, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);'
     } else {
       document.body.style = 'background: #d6e0f0;'
