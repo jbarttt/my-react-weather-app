@@ -28,6 +28,36 @@ export default function Weather(props) {
       document.body.style = 'background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);'
     } else if (response.data.weather[0] === "02n") {
       document.body.style = 'background: linear-gradient(to right, #d7d2cc 0%, #304352 100%);'
+    } else if (response.data.weather[0] === "03d") {
+      document.body.style = 'background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);'
+    } else if (response.data.weather[0] === "03n") {
+      document.body.style = 'background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);'
+    } else if (response.data.weather[0] === "04d") {
+      document.body.style = 'background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);'
+    } else if (response.data.weather[0] === "04n") {
+      document.body.style = 'background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);'
+    } else if (response.data.weather[0] === "09d") {
+      document.body.style = 'background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);'
+    } else if (response.data.weather[0] === "09n") {
+      document.body.style = 'background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);'
+    } else if (response.data.weather[0] === "10d") {
+      document.body.style = 'background: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);'
+    } else if (response.data.weather[0] === "10n") {
+      document.body.style = 'background: linear-gradient(to right, #d7d2cc 0%, #304352 100%);'
+    } else if (response.data.weather[0] === "11d") {
+      document.body.style = 'background: linear-gradient(-180deg, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);'
+    } else if (response.data.weather[0] === "11n") {
+      document.body.style = 'background: linear-gradient(-180deg, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);'
+    } else if (response.data.weather[0] === "13d") {
+      document.body.style = 'background: linear-gradient(to top, #dfe9f3 0%, white 100%);'
+    } else if (response.data.weather[0] === "13n") {
+      document.body.style = 'background: linear-gradient(to top, #dfe9f3 0%, white 100%);'
+    } else if (response.data.weather[0] === "50d") {
+      document.body.style = 'background: linear-gradient(-180deg, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);'
+    } else if (response.data.weather[0] === "50n") {
+      document.body.style = 'background: linear-gradient(-180deg, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);'
+    } else {
+      document.body.style = 'background: #d6e0f0;'
     }
   }
 
